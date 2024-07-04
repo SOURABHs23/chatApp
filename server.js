@@ -1,8 +1,8 @@
 import express from "express";
 import http from "http";
 import { Server } from "socket.io";
-import { Message } from "./message.schema.js";
-import { User } from "./user.schema.js";
+import { Message } from "./schema/message.schema.js";
+import { User } from "./schema/user.schema.js";
 import { connectToDB } from "./db.config.js";
 import cors from "cors";
 
