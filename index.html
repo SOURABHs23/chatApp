@@ -1,0 +1,34 @@
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatterUp</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="chat-container">
+        <div id="header">
+            <h1>Chat App</h1>
+        </div>
+        <div id="notification-panel"></div>
+        <div id="chat-history"></div>
+        <div id="typing-indicator"></div>
+        <div id="message-input">
+            <input type="text" id="message" placeholder="Type a message">
+            <button id="send-message">Send</button>
+        </div>
+    </div>
+    <aside id="aside-view">
+        <h3>Connected Users (<span id="user-count">0</span>)</h3>
+        <ul id="user-list"></ul>
+    </aside>
+    <script src="http://localhost:3000/socket.io/socket.io.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
